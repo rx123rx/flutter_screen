@@ -32,7 +32,7 @@ public class ScreenPlugin implements FlutterPlugin, MethodCallHandler, ActivityA
   private ActivityPluginBinding activityPluginBinding;
 
 //  public static void registerWith(@NonNull PluginRegistry.Registrar registrar) {
-//    final MethodChannel channel = new MethodChannel(registrar.messenger(), "github.com/clovisnicolas/flutter_screen");
+//    final MethodChannel channel = new MethodChannel(registrar.messenger(), "github.com/rozar-ruan/flutter_screen");
 //    channel.setMethodCallHandler(new ScreenPlugin(registrar));
 //  }
 
@@ -89,7 +89,7 @@ public class ScreenPlugin implements FlutterPlugin, MethodCallHandler, ActivityA
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
     flutterPluginBinding=binding;
-    channel = new MethodChannel(binding.getBinaryMessenger(), "github.com/clovisnicolas/flutter_screen");
+    channel = new MethodChannel(binding.getBinaryMessenger(), "github.com/rozar-ruan/flutter_screen");
     channel.setMethodCallHandler(this);
   }
 
